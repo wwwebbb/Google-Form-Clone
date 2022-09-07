@@ -6,26 +6,40 @@ body {
 h1,
 h3 {
   font-weight: 400;
-  margin: -70px;
+  margin: -3.5rem -4.375rem;
   position: absolute;
 }
 
 p {
-  margin: 0 -4.4rem -4.4rem -4.4rem;
+  font-size: 0.9em;
+  margin: -0.2rem -4.4rem -3.5rem;
   position: relative;
-}
-
-.container {
-  width: 35em;
-  padding: 5.625rem;
-  margin: 0.7rem auto;
-  border: 1px solid #d5d7dc;
-  border-radius: 10px;
-  background: #ffffff;
 }
 
 .red-text {
   color: #d52a20;
+}
+
+input {
+  transition: 0.1s;
+  font-family: "Open Sans", sans-serif;
+  margin-left: -4.4rem;
+  outline: none;
+  border-width: 0 0 2px;
+  border-color: #e0e0e0;
+}
+input:focus {
+  transition: 0.1s;
+  border-color: #808080;
+}
+
+.container {
+  max-width: 30em;
+  padding: 4.5rem 5.625rem;
+  margin: 0.7rem auto;
+  border: 1px solid #d5d7dc;
+  border-radius: 10px;
+  background: #ffffff;
 }
 
 button {
@@ -43,6 +57,8 @@ button {
 }
 
 button:hover {
-  background-color: #4e2b93;
   cursor: pointer;
+  background-color: #6236ba;
+  filter: drop-shadow(0 0 0.1rem #4e2b93);
+  text-shadow: 0 0 0.5rem #4e2b93;
 }

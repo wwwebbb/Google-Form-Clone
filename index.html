@@ -16,26 +16,39 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="container" style="border-top: 10px solid #5c33ae">
-      <h1>Mock Google Form</h1>
-      <p>
-        This is a mock Google Form created with HTML & CSS by Miles Webb using a
-        reference image without copying code. The submit button will display
-        your information then reset the page.
-        <br />
-        <br />
-        <span class="red-text">* Required</span>
-      </p>
+    <div>
+      <div class="container" style="border-top: 10px solid #5c33ae">
+        <h1>Mock Google Form</h1>
+        <p>
+          This is a mock Google Form created by Miles Webb with HTML & CSS using
+          a reference image and online documentation. The submit button will
+          display your information then reset the page.
+          <br />
+          <br />
+          <span class="red-text">* Required</span>
+        </p>
+      </div>
+
+      <div class="container">
+        <h3>Name<span class="red-text"> *</span></h3>
+        <!-- <p style="margin-top: -2rem">
+          Your name will be displayed on-screen once submitting this information
+        </p> -->
+        <input type="text" placeholder="Your answer" size="30" />
+      </div>
+
+      <div class="container">
+        <h3>Age<span class="red-text"> *</span></h3>
+        <input type="text" placeholder="Your answer" size="30" />
+      </div>
+
+      <div class="container">
+        <h3>Favorite Ice Cream<span class="red-text"> *</span></h3>
+        <input type="text" placeholder="Your answer" size="30" />
+      </div>
+      <button id="btn">Submit</button>
     </div>
-    <div class="container">
-      <h3>Full Name<span class="red-text"> *</span></h3>
-      <p>
-        Your name will be displayed on-screen once submitting this information
-      </p>
-    </div>
-    <div class="container"></div>
-    <div class="container"></div>
-    <button id="btn">Submit</button>
+
     <script src="index.js" async defer></script>
   </body>
 </html>
