@@ -20,34 +20,53 @@
       <div class="container" style="border-top: 10px solid #5c33ae">
         <h1>Mock Google Form</h1>
         <p>
-          This is a mock Google Form created by Miles Webb with HTML & CSS using
-          a reference image and online documentation. The submit button will
-          display your information then reset the page.
+          This is a mock Google Form created by Miles Webb with HTML, CSS, and
+          JavaScript using a reference image and online documentation. The
+          submit button will display your information then reset the page.
           <br />
           <br />
           <span class="red-text">* Required</span>
         </p>
       </div>
 
-      <div class="container">
-        <h3>Name<span class="red-text"> *</span></h3>
-        <!-- <p style="margin-top: -2rem">
-          Your name will be displayed on-screen once submitting this information
-        </p> -->
-        <input type="text" placeholder="Your answer" size="30" />
-      </div>
+      <form id="form">
+        <div class="container">
+          <h3>Name<span class="red-text"> *</span></h3>
+          <input
+            id="name"
+            type="text"
+            placeholder="Your answer"
+            size="35"
+            required
+          />
+        </div>
 
-      <div class="container">
-        <h3>Age<span class="red-text"> *</span></h3>
-        <input type="text" placeholder="Your answer" size="30" />
-      </div>
+        <div class="container">
+          <h3>Age<span class="red-text"> *</span></h3>
+          <input
+            id="age"
+            type="number"
+            min="1"
+            placeholder="Your answer"
+            required
+          />
+        </div>
 
-      <div class="container">
-        <h3>Favorite Ice Cream<span class="red-text"> *</span></h3>
-        <input type="text" placeholder="Your answer" size="30" />
-      </div>
-      <button id="btn">Submit</button>
+        <div class="container">
+          <h3>Favorite Ice Cream<span class="red-text"> *</span></h3>
+          <input
+            id="icecream"
+            type="text"
+            placeholder="Your answer"
+            size="35"
+            required
+          />
+        </div>
+        <input id="btn" type="submit" value="Submit" />
+      </form>
     </div>
+
+    <div id="blackout" style="display: none"></div>
 
     <script src="index.js" async defer></script>
   </body>
