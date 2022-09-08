@@ -17,19 +17,19 @@
   </head>
   <body>
     <div>
-      <div class="container" style="border-top: 10px solid #5c33ae">
-        <h1>Mock Google Form</h1>
-        <p>
-          This is a mock Google Form created by Miles Webb with HTML, CSS, and
-          JavaScript using a reference image and online documentation. The
-          submit button will display your information then reset the page.
-          <br />
-          <br />
-          <span class="red-text">* Required</span>
-        </p>
-      </div>
-
       <form id="form">
+        <div class="container" style="border-top: 10px solid #5c33ae">
+          <h1>Mock Google Form</h1>
+          <p>
+            This is a mock Google Form created by Miles Webb with HTML, CSS, and
+            JavaScript using a reference image and online documentation. The
+            submit button will display your information then reset the page.
+            <br />
+            <br />
+            <span class="red-text">* Required</span>
+          </p>
+        </div>
+
         <div class="container">
           <h3>Name<span class="red-text"> *</span></h3>
           <input
@@ -62,11 +62,13 @@
             required
           />
         </div>
-        <input id="btn" type="submit" value="Submit" />
-      </form>
-    </div>
 
-    <div id="blackout" style="display: none"></div>
+        <div class="btn">
+          <input id="btn" type="submit" value="Submit" />
+        </div>
+      </form>
+      <footer>Miles Webb</footer>
+    </div>
 
     <script src="index.js" async defer></script>
   </body>
