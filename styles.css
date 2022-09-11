@@ -24,6 +24,11 @@ p {
   color: #d52a20;
 }
 
+h3::after {
+  content: " *";
+  color: #d52a20;
+}
+
 .container,
 .btn {
   max-width: 30em;
